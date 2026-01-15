@@ -1,0 +1,19 @@
+---
+title: "Homework 3"
+author: GSND 5345Q, Fundamentals of Data Science
+date: Due Friday, February 6th, 2026
+output: pdf_document
+---
+
+\subsection*{GitHub (100 points)}
+In this section, you will reinforce the concepts and skills covered in the introductory lecture on Git and GitHub. You will answer a set of conceptual questions to demonstrate your understanding of Git’s core functionality and complete hands-on tasks to practice using Git commands and interacting with GitHub.
+\begin{enumerate}
+
+  \item What is the purpose of Git, and how does it differ from GitHub?
+  \item Explain the difference between a commit and a push in Git.
+  \item What does the command git clone do, and how is it different from git pull?
+  \item Initialize a new Git repository in a local folder and create a file named README.md. Add some text to it, commit the changes, and push it to a new GitHub repository. Submit the link to your repository.
+		\item Fork the \href{https://github.com/wevanjohnson/my.package}{https://github.com/wevanjohnson/my.package} directory and clone it to your local machine. Then add your name as an author in the DESCRIPTION file local repository and add a multiplication function to the R package (R folder). Then push the changes to your GitHub fork, and send me a pull request with your changes.  
+		\item Clone the \href{https://github.com/wevanjohnson/2026\_Spring\_FDS}{https://github.com/wevanjohnson/2026\_Spring\_FDS} repository on your computer. Find something that could be improved (typo? explain somthing better), add files/changes to it, and upload it to GitHub. Send another well-annotated pull request to Dr. Johnson. 
+	\end{enumerate}
+	
