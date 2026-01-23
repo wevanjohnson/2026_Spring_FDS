@@ -1,7 +1,7 @@
 ---
 title: "Homework 2"
 author: GSND 5345Q, Fundamentals of Data Science
-date: Due Friday, January 26th, 2026
+date: Due Monday, January 26th, 2026
 output: pdf_document
 ---
 
@@ -34,7 +34,7 @@ Most Unix implementations include a large number of powerful tools and utilities
 		\item \texttt{ls | wc -l}
 		\item \texttt{cat file1.txt file2.txt > file3.txt}
 	\end{enumerate}
-	You can also us pipes in R! Investigate how to do this and give the code for a great example. 
+	You can also use pipes in R! Investigate how to do this and give the code for a great example. 
 	\item Learn about another Unix command that we have not discussed. Give a short description of this function, when you would use it, its syntax, and give some examples of its use.
 \end{enumerate}
 
