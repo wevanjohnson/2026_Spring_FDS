@@ -73,7 +73,7 @@ This course is being taught through a synchronous remote modality through Zoom. 
 -->
 
 ### WORKLOAD:
-This is an 8-week, 2.0 credit class in the begining of Spring 2026. In general, you should expect four hours of in class each week, and two hours outside of class for every hour in class.
+This is an 8-week, 2.0 credit class in the beginning of Spring 2026. In general, you should expect four hours of in class each week, and two hours outside of class for every hour in class.
 
 ### OTHER HELP: 
 I **strongly** encourage you to contact early me if you have difficulty with the material. This course builds on material from prior lectures, so do not fall behind! My job is to help you understand the material as well as possible, and I am flexible with meeting times.
