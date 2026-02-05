@@ -25,7 +25,7 @@ tables: true
 ---
 ## Communicating Science
 
-Effective science communicators educate non-specialist audiences about scientific topics, issues, and debates in ways that are informative, accessible, and empowering. 
+Part of your responsibility as a scientist is to be an effective science communicator. Effective science communicators educate non-specialist audiences about scientific topics, issues, and debates in ways that are informative, accessible, and empowering. 
 
 Science communicators should be able to answer the following questions:
 
