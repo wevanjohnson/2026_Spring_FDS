@@ -3,7 +3,12 @@
 
 ### COURSE DESCRIPTION:
 
-This class is an introduction to the ethics and essential computational tools and skills for data science. The course will cover command-line coding, literate programming, software development, version control, data wrangling and management, and visualization. The standards for open science, reproducibility, and ethical and responsible computing will also be discussed. Students be expected to use R and GitHub throughout this course.
+This class is an introduction to the ethics and essential computational tools and 
+skills for data science. The course will cover command-line coding, literate 
+programming, software development, version control, data wrangling and 
+management, and visualization. The standards for open science, reproducibility, 
+and ethical and responsible computing will also be discussed. Students will be 
+expected to use R and GitHub throughout this course.
 
 ### COURSE OBJECTIVES:
 Students who take this course will: 
@@ -18,12 +23,17 @@ Students who take this course will:
 An introductory course in statistics, biostatistics, epidemiology, or equivalent experience in statistical analysis is recommended (but not required). Programming experience in R is also recommended (again not required). Students without this experience will be encouraged to utilize the asynchronous resources provided at the end of this syllabus to obtain these skills before or during the course. Please contact Dr. Johnson to obtain a list of the required proficiencies.   
 
 ### COURSE FORMAT:
-This class will be taught virtually using a synchronous remote modality, although students will be provided a classroom to gather for each lecture. A co-instructor will be present in the classroom for each lecture. Class will occur Mondays and Wednesdays from 12:00pm-1:50pm. Courses may also be recorded and made available for students who need to miss classes due to personal reasons, illness, or research related needs.
+This class will be taught virtually using a synchronous remote modality, although 
+students will be provided a classroom to gather for each lecture. A co-instructor 
+will be present in the classroom for each lecture. Class will occur on Mondays 
+and Wednesdays from 12:00pm-1:50pm. Courses may also be recorded and made 
+available for students who need to miss classes due to personal reasons, illness, 
+or research-related needs.
 
 ### ZOOM LINK AND CLASSROOM:
 Zoom Meeting ID for all sessions is 95146491967, with the passcode: 236441, or use the following direct link (the link is also available though the course GitHub page): [https://rutgers.zoom.us/j/95146491967?pwd=ySdIKF1NFl4wAOhtAwhop825QUYWWL.1](https://rutgers.zoom.us/j/95146491967?pwd=ySdIKF1NFl4wAOhtAwhop825QUYWWL.1).
 
-Room B619 will also be available for the students to congregate for each lecture, with a co-instructor or TA present. 
+Room B619 will also be available for students to congregate for each lecture, with a co-instructor or TA present. 
 
 ### FACULTY AND STAFF: 
 William Evan Johnson, Ph.D.\
