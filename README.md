@@ -145,4 +145,6 @@ Here are some resources to learn basic statistics (and in some cases R simultane
 
 * [Data Analysis with R Specialization (Coursera/Duke University)](https://www.coursera.org/specializations/statistics?irclickid=w9MUi9wpwxyPTCxztt2SI17tUkFyAhzKk1fbyE0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=2890636&utm_content=b2c)
 * [Introduction to statistis (Coursera/Stanford)](https://www.coursera.org/learn/stanford-statistics)
+"Change the assignment due instructions which is given Wednesday in the syllabus"
+
 
