@@ -116,7 +116,7 @@ Advanced data wrangling in R (week 5)
 
 Advanced R Tools (week 6)
 
-* 2/9/24: Creating R packages
+* 2/9/24: Rmarkdown and Tidyverse
 * 2/11/24: R/Shiny
 
 Data Visualization (Week 7)
