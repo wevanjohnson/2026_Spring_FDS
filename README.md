@@ -3,7 +3,7 @@
 
 ### COURSE DESCRIPTION:
 
-This class is an introduction to the ethics and essential computational tools and skills for data science. The course will cover command-line coding, literate programming, software development, version control, data wrangling and management, and visualization. The standards for open science, reproducibility, and ethical and responsible computing will also be discussed. Students be expected to use R and GitHub throughout this course.
+This class is an introduction to the ethics and essential computational tools and skills for data science. The course will cover command-line coding, literate programming, software development, version control, data wrangling and management, and visualization. The standards for open science, reproducibility, and ethical and responsible computing will also be discussed. Students will be expected to use R and GitHub throughout this course. I recommend checking out the additional resource links if you are unfamiliar with either R or GitHub! 
 
 ### COURSE OBJECTIVES:
 Students who take this course will: 
