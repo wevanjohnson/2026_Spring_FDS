@@ -7,7 +7,7 @@ output: pdf_document
 
 
 \subsection*{Advanced Unix Tools}
-Most Unix implementations include a large number of powerful tools and utilities. (Unix has been in development for more than 50 years!). We were only able to scratch the surface in our class time. It will take time to become comfortable with Unix, but as you struggle, you will find yourself learning just by looking at \texttt{man} files and finding solutions on the internet. For this Homework, you will explore several more advanced Unix functions. You can use any resource available to you--classmates, the internet (Google and ChatPGT!), and Dr. Johnson. Ask all the questions you want, just make sure you do the work and you learn! 
+Most Unix implementations include a large number of powerful tools and utilities. (Unix has been in development for more than 50 years!). We were only able to scratch the surface in our class time. It will take time to become comfortable with Unix, but as you struggle, you will find yourself learning just by looking at \texttt{man} files and finding solutions on the internet. For this Homework, you will explore several more advanced Unix functions. You can use any resource available to you--classmates, the internet (Google and ChatGPT!), and Dr. Johnson. Ask all the questions you want, just make sure you do the work and you learn! 
 
 \begin{enumerate}
 	\item  Learn more about tools for downloading files from external servers (e.g., \texttt{scp}, \texttt{ftp}, \texttt{sftp}, \texttt{rsync}), and for to downloading data from webpages (e.g., \texttt{curl}, \texttt{wget}, \texttt{mget}). Use an appropriate function to download the \texttt{homework2.tar.gz} from the homework folder on course GitHub page. Give the code you used to download these data.({\bf Hint:} To download the \texttt{homework2.tar.gz} from GitHub, control/right click on the "View raw" link and copy the location (see image). If you use the URL in the address bar it downloads the .html for the website. Note this picture might be from a different homework and class, but the action is still the same.)
@@ -34,7 +34,7 @@ Most Unix implementations include a large number of powerful tools and utilities
 		\item \texttt{ls | wc -l}
 		\item \texttt{cat file1.txt file2.txt > file3.txt}
 	\end{enumerate}
-	You can also us pipes in R! Investigate how to do this and give the code for a great example. 
+	You can also use pipes in R! Investigate how to do this and give the code for a great example. 
 	\item Learn about another Unix command that we have not discussed. Give a short description of this function, when you would use it, its syntax, and give some examples of its use.
 \end{enumerate}
 
