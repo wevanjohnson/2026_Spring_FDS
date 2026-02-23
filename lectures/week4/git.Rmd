@@ -230,6 +230,38 @@ Create a new file in the `R` directory named `multiply.R` to contain the code di
 
 Now save the file and use the **add**, **commit**, **push** commands to move it to the local and remote repos. 
 
+## Git Branches
+
+**Branches** allow you to create separate versions of your code to experiment with new ideas without affecting the main codebase. This is useful when you want to:
+
+* Try out new features without breaking working code
+* Work on multiple versions simultaneously
+* Collaborate on different aspects of a project
+* Test different approaches to solve a problem
+
+By default you are on either master or main branch if you don't specify any new branch.
+
+## Creating and Using Branches
+
+Create a new branch and switch to it:
+```{bash, eval=F}
+git checkout -b new-feature
+```
+
+Make your changes, then add and commit as usual. Push the branch to GitHub:
+```{bash, eval=F}
+git push -u origin new-feature
+```
+
+When ready, switch back to main and merge:
+```{bash, eval=F}
+git checkout main
+git merge new-feature
+git push
+```
+
+This workflow allows you to work with several versions of code and return to the main branch when you want to!
+
 # More on Git and GitHub
 
 ## Initializing a Git directory (needed for your homework)
