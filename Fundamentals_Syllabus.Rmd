@@ -1,6 +1,6 @@
 ---
 title: "Fundamentals of Data Science (GSND 5345)"
-date: Spring (Jan-Feb), 2026
+date: Spring (Jan 5th -Feb 25th), 2026
 output: word_document
 ---
 
