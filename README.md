@@ -96,8 +96,8 @@ Introduction to and Ethics of Data Science (Week 1)
 
 Data Science Ethics and Essential Tools (Week 2)
 
-* 1/12/25: Introduction to R and RStudio
-* 1/14/25: The terminal and Unix
+* 1/12/26: Introduction to R and RStudio
+* 1/14/26: The terminal and Unix
 
 Essential Tools for Data Science (Week 3)
 
@@ -106,28 +106,28 @@ Essential Tools for Data Science (Week 3)
 
 Essential Tools for Data Science (Week 4)
 
-* 1/26/25: Git and GitHub
-* 1/28/25: Introduction to Advanced R Programming
+* 1/26/26: Git and GitHub
+* 1/28/26: Introduction to Advanced R Programming
 
 Advanced data wrangling in R (week 5)
 
-* 2/2/25: RMarkdown; Data Structures
-* 2/4/25: The tidyverse; Tidydata wrangling
+* 2/2/26: RMarkdown; Data Structures
+* 2/4/26: The tidyverse; Tidydata wrangling
 
 Advanced R Tools (week 6)
 
-* 2/9/24: Creating R packages
-* 2/11/24: R/Shiny
+* 2/9/26: Creating R packages
+* 2/11/26: R/Shiny
 
 Data Visualization (Week 7)
 
-* 2/16/24: General plotting principles; Intro to `ggplot2`
-* 2/18/24: Advanced plotting with `ggplot2`
+* 2/16/26: General plotting principles; Intro to `ggplot2`
+* 2/18/26: Advanced plotting with `ggplot2`
 
 Final Project Presentations (Week 8)
 
-* 2/23/24: Final student presentations
-* 2/25/24: Final student presentations
+* 2/23/26: Final student presentations
+* 2/25/26: Final student presentations
 
 
 ### ADDITIONAL (ASYNCHRONOUS) MODULES 
