@@ -193,7 +193,7 @@ To see the content of your home directory, open a terminal and type:
 ls
 ```
 
-You can also add **options** (\texttt{`-'} and \texttt{`--'}), **arguments**, and **wild cards** (\texttt{`*'}) to change function behavior: 
+You can also add **options** (\texttt{`-'} and \texttt{`- -'}), **arguments**, and **wild cards** (\texttt{`*'}) to change function behavior: 
 ```{bash, eval=F}
 ls -l
 ls -a
