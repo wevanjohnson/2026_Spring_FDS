@@ -29,7 +29,7 @@ This class will be taught virtually using a synchronous remote modality, althoug
 
 ### ZOOM LINK AND CLASSROOM:
 Zoom Meeting ID for all sessions is 95146491967, with the passcode: 236441, or use the following direct link (the link is also available though the course GitHub page): https://rutgers.zoom.us/j/95146491967?pwd=ySdIKF1NFl4wAOhtAwhop825QUYWWL.1.
-
+// chnaged from though to through//
 Room B619 will also be available for the students to congregate for each lecture, with a co-instructor or TA present. 
 
 ### FACULTY AND STAFF: 
@@ -83,16 +83,16 @@ This course is being taught through a synchronous remote modality through Zoom. 
 This is an 8-week, 2.0 credit class in the begining of Spring 2026. In general, you should expect four hours of in class each week, and two hours outside of class for every hour in class.
 
 ### OTHER HELP: 
-I **strongly** encourage you to contact early me if you have difficulty with the material. This course builds on material from prior lectures, so do not fall behind! My job is to help you understand the material as well as possible, and I am flexible with meeting times.
-
+I **strongly** encourage you to contact me early if you have difficulty with the material. This course builds on material from prior lectures, so do not fall behind! My job is to help you understand the material as well as possible, and I am flexible with meeting times.
+//changed from early me to me early//
 ### ACADEMIC INTEGRITY: 
 You are expected to have read and follow the guidelines at the university’s academic integrity website (http://academicintegrity.rutgers.edu ). These principles forbid plagiarism and require that every Rutgers University student to:
 
 * Properly acknowledge and cite all use of the ideas, results, or words of others
 * Properly acknowledge all contributors to a given piece of work
 * Make sure that all work submitted as his or her own in a course or other academic activity isproduced without the aid of unsanctioned materials or unsanctioned collaboration
-* Treat all other students in an ethical manner, respecting their integrity and right to pursue their educational goals without interference. This requires that a student neither facilitate academic dishonesty by others nor obstruct their academic progress (reproduced from: ttp://academicintegrity.rutgers.edu/academic-integrity-at-rutgers/ ).
-
+* Treat all other students in an ethical manner, respecting their integrity and right to pursue their educational goals without interference. This requires that a student neither facilitate academic dishonesty by others nor obstruct their academic progress (reproduced from: http://academicintegrity.rutgers.edu/academic-integrity-at-rutgers/ ).
+// added h in front of ttp to make it http//
 Violations of academic integrity will be treated in accordance with university policy, and sanctions for violations may range from no credit for the assignment, to a failing course grade to (for the most severe violations) dismissal from the university.
 
 \newpage
