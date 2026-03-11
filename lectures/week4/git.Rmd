@@ -34,7 +34,7 @@ There are three main reasons to use Git and GitHub.
 
 * \underline{Sharing:} GitHub allows us to easily share code!
 * \underline{Collaborating:} Multiple people make changes to code and keep versions synched. GitHub has a special utility, called a **pull request**, that can be used by anybody to suggest changes to your code. 
-* \underline{Version control:} Using `git` permits us to keep track of changes, revert back to previous versions, and create **branches** in to test out ideas, then decide if we **merge** with the original.
+* \underline{Version control:} Using `git` permits us to keep track of changes, revert back to previous versions, and create **branches** to test out ideas, then decide if we **merge** with the original.
 
 # GitHub Repositories
 
