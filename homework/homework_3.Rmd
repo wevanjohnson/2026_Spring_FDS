@@ -1,7 +1,7 @@
 ---
 title: "Homework 3"
 author: GSND 5345Q, Fundamentals of Data Science
-date: Due Friday, February 6th, 2026
+date: Due Friday, February 6th, 2026 at 11:59PM!
 output: pdf_document
 ---
 
