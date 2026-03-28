@@ -1,0 +1,660 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  ignorenonframetext,
+  aspectratio=169]{beamer}
+\newif\ifbibliography
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% remove section numbering
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{section title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{subsection title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\setbeamercolor{frametitle}{fg=black}
+\usepackage{graphicx}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{rmdFigs/RH_template_Page_2.png}}
+\addtobeamertemplate{frametitle}{\vspace*{.25in}}{\vspace*{.25in}}
+\setbeamerfont{frametitle}{size=\huge}
+\usepackage{tikz}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Communicating Science using R Markown},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Communicating Science using R Markown}
+\author{W. Evan Johnson, Ph.D.\\
+Professor, Division of Infectious Disease\\
+Director, Center for Data Science\\
+Rutgers University -- New Jersey Medical School\\
+\href{mailto:w.evan.johnson@rutgers.edu}{\nolinkurl{w.evan.johnson@rutgers.edu}}}
+\date{2026-02-09}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}{Communicating Science}
+\phantomsection\label{communicating-science}
+Effective science communicators educate non-specialist audiences about
+scientific topics, issues, and debates in ways that are informative,
+accessible, and empowering.
+
+Science communicators should be able to answer the following questions:
+
+\begin{itemize}
+\tightlist
+\item
+  Who is my audience?
+\item
+  What is my message for my audience?
+\item
+  What medium am I going to use to communicate my message to my
+  audience?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Communicating Science}
+\phantomsection\label{communicating-science-1}
+The \textbf{lay public} is made up of all the people who are not experts
+in a specific field. When addressing the lay public:
+
+\begin{itemize}
+\tightlist
+\item
+  Keep the story simple and front-load exciting aspects
+\item
+  Make the story relevant to your audience
+\item
+  Use analogies and visuals
+\item
+  Front-load the story
+\item
+  Avoid jargon - simple language but don't oversimplify
+\item
+  Include the people and the process (challenges, successes,
+  collaborations, etc.)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Communicating Science}
+\phantomsection\label{communicating-science-2}
+The \textbf{media} is a ``mediator'' between scientists and the public.
+Note the media is not a homogenous group.
+
+Describing your process, challenges, successes, and collaborations are
+important for writing an informative and engaging press release. Read a
+few popular science articles to get a sense of how your research might
+eventually appear in the news and magazines.
+
+Articles about your work should include visuals--videos or photos--that
+will draw readers' attention to the article and help them grasp the gist
+of the piece.
+\end{frame}
+
+\begin{frame}{Communicating Science}
+\phantomsection\label{communicating-science-3}
+Scientists can share their knowledge with \textbf{policy makers} through
+meetings, testimonies, and open presentations. Suggestions for
+communicating with policy makers:
+
+\begin{itemize}
+\tightlist
+\item
+  Know what issues policy makers are currently discussing and debating
+\item
+  Keep your explanations simple and relevant
+\item
+  Think of some actionable solutions to the problem
+\item
+  Think about the problem and solution in the context of the policy
+  maker's constituency
+\item
+  Be confident in yourself and what you know
+\item
+  Approach a meeting as a conversation, not a presentation
+\item
+  Create a one-pager with your message and key points
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Communicating Science}
+\phantomsection\label{communicating-science-4}
+Visuals make the data supporting your message clear and accessible to
+your audience. Science visualizations include:
+
+\begin{enumerate}
+\tightlist
+\item
+  Graphs, tables, and infographics
+\item
+  Conceptual diagrams
+\item
+  Maps, Satellite photos
+\item
+  Photographs
+\end{enumerate}
+
+Keep the following points in mind:
+
+\begin{enumerate}
+\tightlist
+\item
+  Use a consistent style and format
+\item
+  Use colors with purpose
+\item
+  Use high-resolution graphics
+\item
+  Format your graphics and include labels, legends, and captions
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Reproducible Reports (R markdown)}
+\phantomsection\label{reproducible-reports-r-markdown}
+The final product of a data analysis project is often a report:
+scientific publications, news articles, an analysis report for your
+company, or lecture notes for a class.
+
+Now imagine after you are done you realize you:
+
+\begin{itemize}
+\tightlist
+\item
+  had the wrong dataset
+\item
+  have a new dataset for the same analysis
+\item
+  made a mistake and fix the error, or
+\item
+  your boss or someone you are training wants to see the code and be
+  able to reproduce the results \vskip .1in
+\end{itemize}
+
+Situations like these are common for a data scientist.
+\end{frame}
+
+\begin{frame}{R markdown}
+\phantomsection\label{r-markdown}
+R markdown is a format for \textbf{literate programming} documents.
+Literate programming weaves instructions, documentation, equations, and
+detailed comments among executable code.
+
+It is based on \textbf{markdown}, a markup language that is widely used
+to generate html pages. You can learn more about markdown with the
+following tutorial:
+\href{https://www.markdowntutorial.com/}{\textbf{click here}}
+\end{frame}
+
+\begin{frame}[fragile]{R markdown}
+\phantomsection\label{r-markdown-1}
+You can start an R markdown document in RStudio by clicking on
+\textbf{File}, \textbf{New File}, then \textbf{R markdown}. You will
+then be asked for a title and author.
+
+Once you gain experience with R markdown, you will be able to do this
+without the template and can simply start from a blank template.
+
+As a convention, we use the \texttt{.Rmd} suffix for R markdown files
+\end{frame}
+
+\begin{frame}[fragile]{Compiling the document using \texttt{knitR}}
+\phantomsection\label{compiling-the-document-using-knitr}
+With R markdown, you need to \textbf{compile} the document into the
+final report. We use the \texttt{knitR} package to to do this. The
+specific function used to compile is the \texttt{knit} function, which
+takes a filename as input.
+
+RStudio provides a \texttt{Knit} button that makes it easy and
+convenient to compile the document.
+\end{frame}
+
+\begin{frame}[fragile]{The Header}
+\phantomsection\label{the-header}
+At the top of the document is the R markdown header:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\SpecialCharTok{{-}{-}{-}}
+\NormalTok{title}\SpecialCharTok{:} \StringTok{"Nanostring Analysis"}
+\NormalTok{author}\SpecialCharTok{:} \StringTok{"Evan Johnson"}
+\NormalTok{date}\SpecialCharTok{:} \StringTok{"12/5/2019"}
+\NormalTok{output}\SpecialCharTok{:}\NormalTok{ html\_document}\SpecialCharTok{:}
+\SpecialCharTok{{-}{-}{-}}
+\end{Highlighting}
+\end{Shaded}
+
+R markdown reports can be to be in HTML, PDF, Microsoft Word, or
+presentation formats. By changing the \texttt{output} to, for example
+\texttt{pdf\_document} or \texttt{word\_document}, we can control the
+type of output that is produced.
+\end{frame}
+
+\begin{frame}[fragile]{The Header}
+\phantomsection\label{the-header-1}
+Other output options include code folding, themes, etc.:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\SpecialCharTok{{-}{-}{-}}
+\NormalTok{title}\SpecialCharTok{:} \StringTok{"Nanostring Analysis"}
+\NormalTok{author}\SpecialCharTok{:} \StringTok{"Evan Johnson"}
+\NormalTok{date}\SpecialCharTok{:} \StringTok{"12/5/2019"}
+\NormalTok{output}\SpecialCharTok{:}
+\NormalTok{  html\_document}\SpecialCharTok{:}
+\NormalTok{    code\_folding}\SpecialCharTok{:}\NormalTok{ hide}
+\NormalTok{    toc}\SpecialCharTok{:}\NormalTok{ true}
+\NormalTok{    toc\_float}\SpecialCharTok{:}\NormalTok{ true}
+\NormalTok{    theme}\SpecialCharTok{:} \StringTok{"flatly"}
+\NormalTok{editor\_options}\SpecialCharTok{:} 
+\NormalTok{  chunk\_output\_type}\SpecialCharTok{:}\NormalTok{ console}
+\SpecialCharTok{{-}{-}{-}}
+\end{Highlighting}
+\end{Shaded}
+\end{frame}
+
+\begin{frame}[fragile]{R Code Chunks}
+\phantomsection\label{r-code-chunks}
+In various places in the document, we see something like this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}\{r\}}
+\NormalTok{summary(pressure)}
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+
+These are the \textbf{code chunks}. When you compile the document, the R
+code inside the chunk, in this case \texttt{summary(pressure)}, will be
+evaluated and the result included in that position in the final
+document.
+
+To add your own R chunks, you can type the characters above quickly with
+the key binding command-option-I on the Mac and Ctrl-Alt-I on Windows.
+\end{frame}
+
+\begin{frame}[fragile]{R Code Chunks}
+\phantomsection\label{r-code-chunks-1}
+Its a good habit to adding a label to the R code chunks. This will be
+very useful when debugging, among other situations. You do this by
+adding a descriptive word like this:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}\{r pressure{-}summary\}}
+\NormalTok{summary(pressure)}
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+\end{frame}
+
+\begin{frame}[fragile]{R Code Chunks}
+\phantomsection\label{r-code-chunks-2}
+We can also add plots to our report:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}\{r, out.width = \textquotesingle{}30\%\textquotesingle{}, fig.align = \textquotesingle{}center\textquotesingle{}\}}
+\NormalTok{plot(pressure)}
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\includegraphics[width=0.3\linewidth]{Rmarkdown_files/figure-beamer/unnamed-chunk-6-1} \end{center}
+
+The chunk options \texttt{out.width} and \texttt{fig.align} adjust the
+size and location
+\end{frame}
+
+\begin{frame}[fragile]{R Code Chunks}
+\phantomsection\label{r-code-chunks-3}
+By default, the code will show up as well. To avoid having the code show
+up, you can use an argument. To avoid this, you can use the argument
+\texttt{echo=FALSE}. For example:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}\{r, echo=FALSE\}}
+\NormalTok{summary(pressure)}
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+
+If you want to include the code in the document, but not run the code
+and/or include results, you can use the argument \texttt{eval=FALSE}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}\{r, eval=FALSE\}}
+\NormalTok{\# You can install the tidyverse using:}
+\NormalTok{install.packages(tidyverse)}
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+\end{frame}
+
+\begin{frame}[fragile]{R Code Chunks (global \texttt{knitr} options)}
+\phantomsection\label{r-code-chunks-global-knitr-options}
+One of the R chunks may contain a complex looking call:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}\{r setup, include=FALSE\}}
+\NormalTok{knitr::opts\_chunk$set(echo = TRUE)}
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+
+The \texttt{include=FALSE} option in the chunk call will tell the system
+to run the R code, but not include it in the html/pdf/word report.
+
+The R code in the chunk sets the \texttt{knitr} default to
+\texttt{echo=TRUE} in the call for any R chunks following this one.
+\end{frame}
+
+\begin{frame}[fragile]{Other Code Chunks}
+\phantomsection\label{other-code-chunks}
+\texttt{knitr} can execute code in many languages besides R:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}\{python\}}
+\NormalTok{x = [2, 1, 3]}
+\NormalTok{print(x[0],"Hello Python!")}
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 2 Hello Python!
+\end{verbatim}
+
+Some of the available language engines include: Python, SQL, Bash, Rcpp,
+Stan, JavaScript, and CSS.
+\end{frame}
+
+\begin{frame}[fragile]{\LaTeX~Equations}
+\phantomsection\label{equations}
+One exciting feature about R markdown is that it allows you to include
+\LaTeX~equations to be rendered in html, pdf, or Word.
+
+For example, to show the probability under the normal curve in the
+interval \((a,b)\), you can use the \LaTeX~code: \footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textbackslash{}mbox\{Pr\}(a \textless{} x \textless{} b) = }
+\NormalTok{  \textbackslash{}int\_a\^{}b \textbackslash{}frac\{1\}\{\textbackslash{}sqrt\{2\textbackslash{}pi\}\textbackslash{}sigma\} }
+\NormalTok{  e\^{}\{{-}\textbackslash{}frac\{1\}\{2\}\textbackslash{}left( \textbackslash{}frac\{x{-}\textbackslash{}mu\}\{\textbackslash{}sigma\} \textbackslash{}right)\^{}2\} \textbackslash{}, dx}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
+This will be rendered by \texttt{knitr} as:
+
+\[\mbox{Pr}(a < x < b) = \int_a^b \frac{1}{\sqrt{2\pi}\sigma} e^{-\frac{1}{2}\left( \frac{x-\mu}{\sigma} \right)^2} \, dx\]
+\end{frame}
+
+\begin{frame}[fragile]{Other Options (tabsets)}
+\phantomsection\label{other-options-tabsets}
+One very useful tool in Markdown is to add tabs to the html document:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\#\# This is a header \{.tabset\}}
+\NormalTok{\#\#\# This is Tab 1}
+\NormalTok{\#\#\# This is Tab 2}
+\NormalTok{\#\# This is a new header (not in the tabs)}
+\end{Highlighting}
+\end{Shaded}
+
+The \texttt{\{.tabset\}} option will make all lower level subheadings
+tabs in the html. The next same or higher level header will break out of
+the tabset.
+\end{frame}
+
+\begin{frame}[fragile]{Other Options (tabsets)}
+\phantomsection\label{other-options-tabsets-1}
+\textbf{Pro tip:} tabs can be generated dynamically:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\#\# My Header \{.tabset\}}
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}\{r, results = \textquotesingle{}asis\textquotesingle{}\}}
+\NormalTok{n \textless{}{-} 10}
+\NormalTok{for (i in 1:n)\{}
+\NormalTok{  cat("\#\#\#" , "Tab", i, "\textbackslash{}n")}
+\NormalTok{    print(i)}
+\NormalTok{  cat("\textbackslash{}n\textbackslash{}n")}
+\NormalTok{\}}
+\NormalTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
+\end{Highlighting}
+\end{Shaded}
+\end{frame}
+
+\begin{frame}{Other Options}
+\phantomsection\label{other-options}
+We will explore other R markdown options: headers, tabsets, and
+\LaTeX~equations in class and in your Exercises.
+
+\underline{Note:} From now on, all R-based Exercises should preferably
+be done using an R markdown document. Your document should include
+headers, descriptive text, equations, R code, and plots/figures!
+\end{frame}
+
+\begin{frame}{More on R markdown}
+\phantomsection\label{more-on-r-markdown}
+There is a lot more you can do with R markdown. We highly recommend you
+continue learning as you gain more experience writing reports in R.
+There are many free resources on the internet including:
+
+\begin{enumerate}
+\tightlist
+\item
+  RStudio's tutorial: \url{https://rmarkdown.rstudio.com}
+\item
+  The cheat sheet:
+  \url{https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf}
+\item
+  The knitR book: \url{https://yihui.name/knitr/}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{More Practice}
+\phantomsection\label{more-practice}
+R markdown is a powerful tool for literate prgramming. To gain more
+practice, as part of your homework you will recreate the .Rmd file for
+the example file in the homework folder: ``Rmarkdown\_example.html.''
+\end{frame}
+
+\begin{frame}[fragile]{Install the following packages:}
+\phantomsection\label{install-the-following-packages}
+For the next lecture on tidyverse R packages please install the
+following:
+
+The tidyverse:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{"tidyverse"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+R Packages:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{install.packages}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\StringTok{"devtools"}\NormalTok{,}\StringTok{"styler"}\NormalTok{,}\StringTok{"testthat"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+Shiny:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{"shiny"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+\end{frame}
+
+\begin{frame}[fragile]{Session info}
+\phantomsection\label{session-info}
+\tiny
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sessionInfo}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## R version 4.5.2 (2025-10-31 ucrt)
+## Platform: x86_64-w64-mingw32/x64
+## Running under: Windows 11 x64 (build 22631)
+## 
+## Matrix products: default
+##   LAPACK version 3.12.1
+## 
+## locale:
+## [1] LC_COLLATE=English_United States.utf8 
+## [2] LC_CTYPE=English_United States.utf8   
+## [3] LC_MONETARY=English_United States.utf8
+## [4] LC_NUMERIC=C                          
+## [5] LC_TIME=English_United States.utf8    
+## 
+## time zone: America/New_York
+## tzcode source: internal
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## loaded via a namespace (and not attached):
+##  [1] digest_0.6.39     fastmap_1.2.0     xfun_0.55         Matrix_1.7-4     
+##  [5] lattice_0.22-7    reticulate_1.44.1 knitr_1.51        htmltools_0.5.9  
+##  [9] png_0.1-8         rmarkdown_2.30    cli_3.6.5         grid_4.5.2       
+## [13] withr_3.0.2       compiler_4.5.2    rprojroot_2.1.1   here_1.0.2       
+## [17] rstudioapi_0.17.1 tools_4.5.2       evaluate_1.0.5    Rcpp_1.1.1       
+## [21] yaml_2.3.12       otel_0.2.0        jsonlite_2.0.0    rlang_1.1.7
+\end{verbatim}
+\end{frame}
+
+\end{document}

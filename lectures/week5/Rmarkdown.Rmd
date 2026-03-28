@@ -1,25 +1,24 @@
 ---
-title: "Communicating Science using R Markown"
-author: | 
-  | W. Evan Johnson, Ph.D.
-  | Professor, Division of Infectious Disease
-  | Director, Center for Data Science
-  | Rutgers University -- New Jersey Medical School
-  | w.evan.johnson@rutgers.edu
+title: "Communicating Science using R Markdown"
+author: "| W. Evan Johnson, Ph.D.\n| Professor, Division of Infectious Disease\n|
+  Director, Center for Data Science\n| Rutgers University -- New Jersey Medical School\n|
+  w.evan.johnson@rutgers.edu\n"
 date: "`r Sys.Date()`"
+output:
+  slidy_presentation: default
+  ioslides_presentation: default
+  beamer_presentation: default
 header-includes:
-  - \usepackage{amsmath}
-  - \usepackage{xcolor}
-  - \setbeamercolor{frametitle}{fg=black}
-  - \usepackage{graphicx}
-  - \usebackgroundtemplate{\includegraphics[width=\paperwidth]{rmdFigs/RH_template_Page_2.png}}
-  - \addtobeamertemplate{frametitle}{\vspace*{.25in}}{\vspace*{.25in}}
-  - \setbeamerfont{frametitle}{size=\huge}
-  - \usepackage{tikz}
-output: 
-  beamer_presentation
-classoption: aspectratio=169 
-editor_options: 
+- \usepackage{amsmath}
+- \usepackage{xcolor}
+- \setbeamercolor{frametitle}{fg=black}
+- \usepackage{graphicx}
+- \usebackgroundtemplate{\includegraphics[width=\paperwidth]{rmdFigs/RH_template_Page_2.png}}
+- \addtobeamertemplate{frametitle}{\vspace*{.25in}}{\vspace*{.25in}}
+- \setbeamerfont{frametitle}{size=\huge}
+- \usepackage{tikz}
+classoption: aspectratio=169
+editor_options:
   chunk_output_type: console
 tables: true
 ---
